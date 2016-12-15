@@ -18,3 +18,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../
 4. Once you have these values for all pt bins and all WP, arrange them as an array for each systematic so that each ith component of each array corresponds to a systematic for the same WP and pt bin, i.e. the 0th and input these arrays into test.cxx ()
 
 5. Now you run SFcalc.sh, making sure that it reads the appropriate ith component for each WP and pt bin, and making sure it outputs the information you need to make a .tex file ()
+
+6. Once you have the nominal SFs, the systematic error up and down, and the systematic + statistical error up and down, along with the pT binning, you can input all of this into SFComp.C to produce plots for each WP.
