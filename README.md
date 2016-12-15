@@ -1,14 +1,23 @@
 1. To download:
 
 cmsrel CMSSW_7_6_4
+
 cd CMSSW_7_6_4/src
+
 cmsenv
+
 git clone git://github.com/kskovpen/CFIT.git
+
 cd CFIT
+
 make
+
 git clone git://github.com/asady/SFcalculation.git
+
 cd SFcalculation
+
 make
+
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../
 
 2. To calculate the +/- templates systematic, edit runSFtemplates.sh to run over the +/- templates - it’s recommended to edit test.cxx so that it only prints out the nominal SF value ()
